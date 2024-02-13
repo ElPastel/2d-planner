@@ -1,0 +1,12 @@
+.objectList {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 30px;
+}
+
+.object {
+  width: 45px;
+  height: 45px;
+  background-color: red;
+}
