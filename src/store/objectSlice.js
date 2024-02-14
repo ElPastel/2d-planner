@@ -1,8 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit"
 
-let nextId = 1
-
 const initialState = {
+  idCounter: 0,
   objectsOnBoard: [],
 }
 
@@ -11,8 +10,9 @@ const objectsSlice = createSlice({
   initialState,
   reducers: {
     addObject(state, action) {
-      const { objectId, x, y } = action.payload
-      state.objectsOnBoard.push({ id: nextId++, objectId, x, y })
+      const { objectId, x, y, id } = action.payload
+      state.objectsOnBoard.push({ id, objectId, x, y })
+      state.idCounter++
     },
     moveObject(state, action) {
       const { id, x, y } = action.payload
@@ -22,8 +22,12 @@ const objectsSlice = createSlice({
         state.objectsOnBoard[objectIndex].y = y
       }
     },
+    displayImportObjects(state, action) {
+      state.objectsOnBoard = action.payload
+    },
   },
 })
 
-export const { addObject, moveObject } = objectsSlice.actions
+export const { addObject, moveObject, displayImportObjects } =
+  objectsSlice.actions
 export default objectsSlice.reducer

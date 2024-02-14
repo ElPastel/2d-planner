@@ -6,4 +6,10 @@
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --color-grey: #aaa79e;
+  --color-light-grey: #f9f9f9;
+  --color-blue: #5886b0;
+  --color-light-blue: #6fa8dc;
+  --color-white: #ffffff;
+  --color-shadow: rgba(0, 0, 0, 0.25);
 }
