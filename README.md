@@ -1,8 +1,5 @@
-# React + Vite
+# Планировщик
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Приложение позволяет моделировать расстановку 2D объектов. Можно добавлять на доску объекты из списка и перемещать их, сохранять координаты расстановки в файл, а также ипорт файла с координатами для воспроизведения расстановки на доске.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Ссылка на демо](https://main--2d-planner.netlify.app/)
